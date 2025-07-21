@@ -272,3 +272,124 @@ a:hover {
   60%  { transform: rotate(0deg); }
   100% { transform: rotate(0deg); }
 }
+
+
+/* -------------------- Responsive Design -------------------- */
+
+/* For tablets and smaller (≤ 768px) */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .introduction {
+    font-size: 20px;
+    height: auto;
+    padding: 0 5%;
+  }
+
+  .bio-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .bio-photo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .bio {
+    padding: 0 20px;
+    font-size: 18px;
+  }
+
+  .computerimages {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .computerimages img {
+    width: 90%;
+    height: auto;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-block {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .contact-form input {
+    width: 100%;
+  }
+
+  .contact-form textarea {
+    height: 25vh;
+  }
+
+  #contactme {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .checkout {
+    font-size: 24px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .aboutme {
+    font-size: 30px;
+    height: auto;
+    padding-top: 20px;
+  }
+}
+
+/* For phones and smaller (≤ 480px) */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  .bio-photo {
+    padding: 0;
+  }
+
+  .bio {
+    font-size: 16px;
+  }
+
+  .project-block {
+    padding: 15px;
+  }
+
+  .contact-form {
+    font-size: 18px;
+  }
+
+  #form-status {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
