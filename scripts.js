@@ -23,7 +23,7 @@ myform.addEventListener('submit', function(event) {
     forminfo.email = formdata.get('email');
     forminfo.message = formdata.get('message');
 
-    fetch('https://contact-form-backend-988r.onrender.com/', {
+    fetch('https://contact-form-backend-988r.onrender.com/contact', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
