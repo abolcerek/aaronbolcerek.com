@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaron Bolcerek</title>
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+  <script src="scripts.js" defer></script>
+  <header id="header">
+    <div class="container">
+      <nav>
+        <img src="./img/name.png" alt="Aaron" class="logo" />
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#works">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="introduction">
+    <div class="bio-photo">
+        <img src="./img/profile.png" alt="Profile photo">
+    </div>
+    <div class="bio-text">
+      <h1>
+        <div class="wave">
+          Hi<span class="wave-emoji">👋</span></div> <div class="intro">I'm Aaron Bolcerek</div>
+      </h1> 
+  </section>
+
+  <section id="About">
+    <div class="aboutme">
+      <h2>About Me</h2>
+    </div>
+    <div class="bio">
+      <div class="bio-text">
+      <p>
+        I am a Senior Computer Science and Economics major at
+      <a href="https://www.conncoll.edu/" class="conncoll">Connecticut College🐪</a>.
+      I am a developer and curious builder who enjoys working on all kinds of projects—from web apps and AI research to robotics.
+      Currently at my internship I am using TypeScript alongside Playwright to automate testing for the deployment of websites for clients.
+    </p>
+    <p>
+      Beyond that, I have held positions as member of the Finance Committee as well as Treasurer of the Alpine Ski Racing Team. I additionally have worked as the web-developer for The College Voice (Connecticut College's newspaper) and as a Data Structures TA.
+    </p>
+    <p>
+      I am currently exploring opportunities in tech, specifically seeking roles in software engineering, data engineering, full-stack development, or data science where I can apply my technical skills and passion for problem solving.
+    </p>
+    </div>
+      <div class="computerimages">
+      <img src="./img/datascience.png" alt="computer image">
+      <img src="./img/computer2.png" alt="computer image 2">
+      <img src="./img/computer1.png" alt="computer image 3">
+    </div>
+    <p class="checkout">Check out some of my work!</p>
+      </p>
+    </div>
+  </section>
+  <section id="works">
+    <h2 class="projects">My Projects</h2>
+    <div class="projects-container">
+      <a href="https://github.com/abolcerek/Sudoku-Transformer-Classifier" class="project-link" target="_blank">
+      <div class="project-block">
+        <h3>Sudoku Transformer Classifier </h3>
+        <p>A machine learning project that classifies Sudoku puzzle difficulty a BERT-based model.</p>
+      </div>
+      </a>
+      <a href="https://github.com/abolcerek" class="project-link" target="_blank">
+      <div class="project-block">
+        <h3>Project Atreus</h3>
+        <p>Built and autonomous robot capable of playing Soccer via the Arduino IDE.</p>
+      </div>
+      </a>
+      <a href="https://github.com/abolcerek" class="project-link" target="_blank">
+      <div class="project-block">
+        <h3>This Website!</h3>
+      </div>
+    </div>
+    </a>
+  </section>
+  <section id="contact">
+    <h2 id="contactme">Contact Me!</h2>
+    <form class="contact-form" id="myformid">
+      <div>
+        <label for="name">Name</label>
+        <input type="name" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" required></textarea>
+      </div>
+      <div class="submit">
+      <button id="submitbutton" type="submit">Submit</button>
+      </div>
+    </form>
+    <div id="form-status"></div>
+  </section>
+</body>
+</html>

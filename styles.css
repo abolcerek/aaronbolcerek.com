@@ -1,0 +1,262 @@
+body {
+  font-family: sans-serif;
+  background-image: radial-gradient(#141204) ;
+  color: #E8985E;
+  margin: 0;
+}
+
+
+.container {
+  padding: 10px 10%;
+}
+
+.container img{
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+  font-size: 25px;
+  gap: 30px;
+  text-align: center;
+  height: 100vh;
+}
+
+.bio-photo {
+  width: 485px;
+  height: 575px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.bio-photo img{
+  width: 500px;
+  height: 600px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.checkout {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 30px;
+  height: 5vh;
+}
+
+.aboutme {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  height: 12vh;
+}
+
+.bio {
+  font-size: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.bio-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.computerimages {
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: space-around;
+}
+
+.computerimages img{
+  height: 300px;
+  width: 300px;
+}
+
+#works {
+  padding: 20px;
+  height: 50vh;
+}
+
+.projects-container {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-block {
+  border: 1px solid #E8985E;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px pgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-image: radial-gradient(#54442B, #141204);
+}
+
+.project-block:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #999;
+    text-decoration: none;
+}
+
+a:visited {
+  color: #54442B;
+}
+
+a:link {
+  color: #E8985E;
+}
+
+a:hover {
+  color: #E8985E;
+}
+
+.wave-emoji {
+    display: inline-block;
+    transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#contact {
+  padding: 50px 10%;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+  font-size: 22px;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact-form textarea {
+  width: 100%;
+  height: 40vh;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #262A10;
+  border-radius: 5px;
+  background-color: #54442B;
+  border-radius: 15px;
+  border: #E8985E 1.5px solid;
+  color: #E8985E;
+}
+
+.contact-form input {
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #54442B;
+  border-radius: 15px;
+  border: #E8985E 1.5px solid;
+  color: #E8985E;
+}
+
+.contact-form button {
+  background-color:  #E8985E;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contactme {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+#form-status {
+  display: none;
+  font-size: 24px;
+  padding: 20px;
+}
