@@ -127,7 +127,18 @@ h1 {
 
 .project-link {
   text-decoration: none;
-  color: inherit;
+}
+
+.project-link:link {
+  color: #E8985E;
+}
+
+.project-link:visited {
+  color: #54442B;
+}
+
+.project-link:hover {
+  color: #FFD6A5;
 }
 
 .project-block {
@@ -160,12 +171,12 @@ h1 {
     text-decoration: none;
 }
 
-a:visited {
-  color: #54442B;
-}
-
 a:link {
   color: #E8985E;
+}
+
+a:visited {
+  color: #54442B;
 }
 
 a:hover {
