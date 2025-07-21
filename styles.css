@@ -1,16 +1,17 @@
+/* -------------------- Global Styles -------------------- */
 body {
   font-family: sans-serif;
-  background-image: radial-gradient(#141204) ;
+  background-image: radial-gradient(#141204);
   color: #E8985E;
   margin: 0;
 }
 
-
+/* -------------------- Container & Layout -------------------- */
 .container {
   padding: 10px 10%;
 }
 
-.container img{
+.container img {
   display: flex;
   justify-content: flex-start;
 }
@@ -22,27 +23,23 @@ nav {
   flex-wrap: wrap;
 }
 
-.logo {
-  width: 150px;
-  height: auto;
-}
-
-nav ul li{
+nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   font-size: 18px;
 }
 
+/* -------------------- Typography -------------------- */
 h1 {
   font-size: 75px;
 }
 
-
+/* -------------------- Introduction Section -------------------- */
 .introduction {
   display: flex;
   flex-direction: column;
@@ -64,21 +61,14 @@ h1 {
   padding: 10px;
 }
 
-.bio-photo img{
+.bio-photo img {
   width: 500px;
   height: 600px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.checkout {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  font-size: 30px;
-  height: 5vh;
-}
-
+/* -------------------- About Section -------------------- */
 .aboutme {
   font-size: 40px;
   display: flex;
@@ -88,8 +78,7 @@ h1 {
 
 .bio {
   font-size: 20px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 0 80px;
 }
 
 .bio-text {
@@ -100,18 +89,32 @@ h1 {
 
 .computerimages {
   display: flex;
-  flex-flow: row, nowrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
 }
 
-.computerimages img{
+.computerimages img {
   height: 300px;
   width: 300px;
 }
 
+.checkout {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 30px;
+  height: 5vh;
+}
+
+/* -------------------- Projects Section -------------------- */
 #works {
   padding: 20px;
   height: 50vh;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
 }
 
 .projects-container {
@@ -120,15 +123,11 @@ h1 {
   gap: 20px;
 }
 
-.projects {
-  display: flex;
-  justify-content: center;
-}
-
 .project-link {
   text-decoration: none;
 }
 
+/* Place a-specific styles after the base .project-link styles to avoid override issues */
 .project-link:link {
   color: #E8985E;
 }
@@ -138,39 +137,10 @@ h1 {
 }
 
 .project-link:hover {
-  color: #FFD6A5;
+  color: #E8985E;
 }
 
-.project-block {
-  border: 1px solid #E8985E;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px pgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-image: radial-gradient(#54442B, #141204);
-}
-
-.project-block:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.close-button {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close-button:hover,
-.close-button:focus {
-    color: #999;
-    text-decoration: none;
-}
-
+/* Base anchor tag styles (must come in correct order) */
 a:link {
   color: #E8985E;
 }
@@ -183,25 +153,31 @@ a:hover {
   color: #E8985E;
 }
 
-.wave-emoji {
-    display: inline-block;
-    transform-origin: 70% 70%;
+.project-block {
+  border: 1px solid #E8985E;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-image: radial-gradient(#54442B, #141204);
 }
 
-@keyframes wave-animation {
-    0% { transform: rotate(0deg); }
-    10% { transform: rotate(14deg); }
-    20% { transform: rotate(-8deg); }
-    30% { transform: rotate(14deg); }
-    40% { transform: rotate(-4deg); }
-    50% { transform: rotate(10deg); }
-    60% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
+.project-block:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* -------------------- Contact Section -------------------- */
 #contact {
   padding: 50px 10%;
   justify-content: center;
+}
+
+#contactme {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
 }
 
 .contact-form {
@@ -220,45 +196,33 @@ a:hover {
   display: block;
 }
 
+.contact-form textarea,
+.contact-form input {
+  background-color: #54442B;
+  border-radius: 15px;
+  border: 1.5px solid #E8985E;
+  color: #E8985E;
+  font-size: 16px;
+  padding: 10px;
+}
+
 .contact-form textarea {
   width: 100%;
   height: 40vh;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #262A10;
-  border-radius: 5px;
-  background-color: #54442B;
-  border-radius: 15px;
-  border: #E8985E 1.5px solid;
-  color: #E8985E;
 }
 
 .contact-form input {
   width: 50%;
   height: 50%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: #54442B;
-  border-radius: 15px;
-  border: #E8985E 1.5px solid;
-  color: #E8985E;
 }
 
 .contact-form button {
-  background-color:  #E8985E;
+  background-color: #E8985E;
   padding: 12px;
   font-size: 18px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-#contactme {
-  display: flex;
-  justify-content: center;
-  font-size: 50px;
 }
 
 .submit {
@@ -270,4 +234,41 @@ a:hover {
   display: none;
   font-size: 24px;
   padding: 20px;
+}
+
+/* -------------------- Misc -------------------- */
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #999;
+  text-decoration: none;
+}
+
+.wave-emoji {
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+  0%   { transform: rotate(0deg); }
+  10%  { transform: rotate(14deg); }
+  20%  { transform: rotate(-8deg); }
+  30%  { transform: rotate(14deg); }
+  40%  { transform: rotate(-4deg); }
+  50%  { transform: rotate(10deg); }
+  60%  { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
 }
