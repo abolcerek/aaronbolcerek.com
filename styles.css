@@ -403,6 +403,7 @@ a:hover {
     max-width: 30%;
     height: auto;
     object-fit: cover;
+    box-shadow: 0 4px 12px rgba(232, 152, 94, 0.5); /* orange glow */
   }
 
   .projects-container {
