@@ -1,7 +1,8 @@
 /* -------------------- Global Styles -------------------- */
 body {
   font-family: sans-serif;
-  background-image: radial-gradient(#141204);
+  background-image: radial-gradient(circle at center, #141204, #141204);
+  background-color: #141204;
   color: #E8985E;
   margin: 0;
 }
@@ -52,7 +53,7 @@ h1 {
   font-size: 25px;
   gap: 30px;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .bio-photo {
