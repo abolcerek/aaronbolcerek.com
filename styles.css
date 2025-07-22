@@ -79,6 +79,7 @@ h1 {
   display: flex;
   justify-content: center;
   min-height: 12vh;
+  margin-bottom: 5px;
 }
 
 .bio {
