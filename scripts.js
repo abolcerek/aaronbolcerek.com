@@ -6,6 +6,7 @@ window.onload = function() {
 let forminfo = {};
 let hasSubmitted = false;
 
+const loadingOverlay = document.querySelector('.loading-state');
 const formstatus = document.getElementById('form-status');
 
 const myform = document.getElementById('myformid');
@@ -23,6 +24,8 @@ myform.addEventListener('submit', function(event) {
     forminfo.email = formdata.get('email');
     forminfo.message = formdata.get('message');
 
+    loadingOverlay.style.display = 'flex';
+
     fetch('https://contact-form-backend-988r.onrender.com/contact', {
         method: 'POST',
         headers: {
@@ -37,11 +40,11 @@ myform.addEventListener('submit', function(event) {
         return response.json()
     })
     .then(data => {
-    console.log('Success:', data);
-    const success = document.getElementById('form-status');
-    success.textContent = 'Message sent successfully!';
-    success.style.display = 'flex';
-    success.style.justifyContent = "center";
+        console.log('Success:', data);
+        const success = document.getElementById('form-status');
+        success.textContent = 'Message sent successfully!';
+        success.style.display = 'flex';
+        success.style.justifyContent = "center";
 
     myform.reset();
     setTimeout(() => {
@@ -51,10 +54,13 @@ myform.addEventListener('submit', function(event) {
     })
 
     .catch(error => {
-    console.error('Error:', error); 
-    const failure = document.getElementById('form-status');
-    failure.textContent = 'Failed to send message. Please try again';
-    failure.style.display = "flex";
-    failure.style.justifyContent = 'center';
+        console.error('Error:', error); 
+        const failure = document.getElementById('form-status');
+        failure.textContent = 'Failed to send message. Please try again';
+        failure.style.display = "flex";
+        failure.style.justifyContent = 'center';
+    })
+    .finally(() => {
+        loadingOverlay.style.display = 'none';
     });
 });
