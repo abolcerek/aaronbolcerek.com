@@ -9,7 +9,7 @@ const EMAIL_USER = process.env.EMAIL_USER;
 const app = express();
 
 const corsOptions = {
-    origin: 'https://abolcerek.github.io',
+    origin: 'https://aaronbolcerek.com',
     methods: ['GET', 'POST'],
     credentials: true,
 };
