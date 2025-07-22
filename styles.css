@@ -102,6 +102,7 @@ h1 {
 .computerimages img {
   height: 300px;
   width: 300px;
+  filter: drop-shadow(0 0 6px #E8985E);
 }
 
 .checkout {
@@ -403,7 +404,6 @@ a:hover {
     max-width: 30%;
     height: auto;
     object-fit: cover;
-    filter: drop-shadow(0 0 6px #E8985E);
   }
 
   .projects-container {
